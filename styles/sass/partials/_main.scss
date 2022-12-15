@@ -1,0 +1,179 @@
+// GENERAL STYLING
+h2 {
+    color: #E75605;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+main p {
+    margin: 15px 0;    
+}
+
+.btn {
+    height: 40px;
+    border-radius: 0;
+    padding: 0 20px;
+    text-shadow: none;
+    border: 3px solid #E75605;
+    background-color: #FFF;
+    color: #1F2022;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #E75605;
+    color: #FFF;
+}
+
+// SECTION 1 - EXPERIENCE & MENU
+.exp1,.exp2 {
+    display: flex;
+}
+
+.exp2 {
+    flex-direction: row-reverse;
+}
+
+.expText,.expImg {
+    width: 50vw;
+    height: 40vh;
+    position:relative;
+}
+
+.experience img {
+    width: calc(100% + 100px);
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.exp2 .expImg {
+    left: -100px;
+}
+
+.expText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.exp1 h2, 
+.exp1 p, 
+.exp1 form {
+    margin-right: 50px;
+}
+
+.exp2 h2,
+.exp2 p,
+.exp2 form {
+    margin-left: 50px;
+}
+
+
+// SECTION 2 - DESSERTS
+.dessertWrapper {
+    display: flex;
+}
+
+.imgContainer {
+    width: 30vw;
+}
+
+.textContainer {
+    width: 70vw;
+    padding-left: 30px;
+}
+
+.imgContainer img {
+    width: 100%;
+}
+
+// SECTION 3 - CTA
+.ctaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E75605;
+    height: 38vh;
+    padding: auto;
+}
+.ctaWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    margin: auto 0;  
+}
+.ctaBtn {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+.ctaIcon {
+    color: #FFF;
+    font-size: 6.5rem;
+    text-align: center;
+}
+.ctaIcon:hover, .ctaIcon:focus {
+    color: #1F2022;
+}
+
+// SECTION 4 - SOCIAL MEDIA
+.instaWrapper h2 {
+    text-align: center;
+}
+.instaPics {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 60px;
+}
+
+.instaPics li {
+    width: calc(100% / 3 - 40px);
+}
+
+.instaImg {
+    position: relative;
+}
+
+.instaImg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.gramImg2 {
+    margin: 0 20px;
+}
+
+.overlay {
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.overlay:hover,
+.overy:focus {
+    opacity: 0.4;
+    cursor: zoom-in;
+}

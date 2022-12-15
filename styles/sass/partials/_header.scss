@@ -1,0 +1,61 @@
+header {
+    background-image: url("../assets/header-burger.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    color: #1F2022;
+    font-size: 1.5rem;
+    line-height: 29px;
+}
+.menu li {
+    margin: 1px 15px;
+}
+a:visited {
+    color: #1F2022;
+}
+
+.menu a:hover, .menu a:focus {
+    color: #E75605;
+    font-weight: 600;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-end;
+    padding: 110px 0;
+}
+
+h1 {
+    margin: 10px 0 0 0;
+    color:#E75605;
+    font-weight: 400;
+    line-height: 120px;
+    font-size: 14rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 10%;
+    color: #E75605;
+    font-size: 2rem;
+}
+
+.icons li {
+    margin: 15px 0;
+}
+
+.headerIcon:visited {
+    color: #E75605;
+}
+
+.headerIcon:hover,
+.headerIcon:focus {
+    color: #1F2022;
+}
