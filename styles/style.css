@@ -308,11 +308,9 @@ ul a {
   padding: 80px 100px;
 }
 
-header {
-  background-image: url("../assets/header-burger.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-top: 30px;
+nav {
+  padding: 20px 100px;
+  position: relative;
 }
 
 .menu {
@@ -335,27 +333,15 @@ a:visited {
   color: #1F2022;
 }
 
-.menu a:hover, .menu a:focus {
+.menu a:hover,
+.menu a:focus {
   color: #E75605;
   font-weight: 600;
 }
 
-.title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 110px 0;
-}
-
-h1 {
-  margin: 10px 0 0 0;
-  color: #E75605;
-  font-weight: 400;
-  line-height: 120px;
-  font-size: 14rem;
+.hamburgerMenu,
+.closeBtn {
+  display: none;
 }
 
 .icons {
@@ -369,7 +355,9 @@ h1 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-left: 10%;
+  position: absolute;
+  right: 40px;
+  bottom: -30vh;
   color: #E75605;
   font-size: 2rem;
 }
@@ -390,6 +378,24 @@ h1 {
 .headerIcon:hover,
 .headerIcon:focus {
   color: #1F2022;
+}
+
+header {
+  background-image: url("../assets/header-burger.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  padding: 110px 0;
+}
+
+h1 {
+  margin: 10px 0 0 0;
+  color: #E75605;
+  text-align: end;
+  font-weight: 400;
+  line-height: 120px;
+  font-size: 14rem;
+  padding-right: 100px;
+  padding-bottom: 30px;
 }
 
 h2 {
