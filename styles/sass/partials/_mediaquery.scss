@@ -1,11 +1,12 @@
-// @media (max-width: 768px) {
-
-// }
-
 @media (max-width: 480px) {
     // general styles
     .wrapper, .headerWrapper {
         padding: 0 20px;
+    }
+    
+    nav {
+        padding: 0;
+        position: relative;
     }
 
     p, form {
@@ -16,6 +17,112 @@
         font-size: 2.2rem;
     }
 
+    // nav
+    .hamburgerMenu {
+        display: block;
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+    }
+
+    .hamburgerMenu input {
+        display: block;
+        width: 60px;
+        height: 40px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+        z-index: 3;
+        opacity: 0;
+    }
+
+    .hamburgerMenu span {
+        display: block;
+        width: 60px;
+        height: 8px;
+        margin-bottom: 8px;
+        position: relative;
+        background-color: #1F2022;
+    }
+
+    .hamburgerIcon {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        z-index: 2;
+    }
+
+    .sliderMenu {
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 5;
+        transform-origin: 0% 0%;
+        transform: translate(-100%,0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    .closeBtn {
+        opacity: 1;
+        border: none;
+        background-color: transparent;
+        color:#E75605;
+        font-size: 6rem;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+
+    }
+    .closeBtn:hover,
+    .closeBtn:focus {
+        font-weight: 600;
+        color:#1F2022;
+    }
+
+    .menu, .icons {
+        font-size: 6rem;
+        text-align: center;
+    }
+
+    .menu {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        padding-bottom: 50px;
+    }
+
+    .icons {
+        bottom: 10vh;
+        right: 8%;
+        color:#1F2022;
+    }
+    .icons ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .icons li {
+        margin: 0 20px;
+    }
+
+    .headerIcon:visited {
+        color: #1F2022;
+    }
+
+    .headerIcon:hover,
+    .headerIcon:focus {
+        color: #E75605;
+    }
+
+    .hamburgerMenu input:checked ~ .sliderMenu {
+        transform: none;
+    }
+
     // header
     header {
         height: 100vh;
@@ -24,9 +131,11 @@
     }
 
     h1 {
+        margin: 0;
+        padding-right: 0;
+        padding-bottom: 50px;
         font-size: 8rem;
         line-height: 80px;
-        margin: 0;
     }
 
     // main section
@@ -155,7 +264,7 @@
         padding-left: 0;
     }
 
-    form {
+    footer form {
         display: flex;
         flex-direction: column;
     }

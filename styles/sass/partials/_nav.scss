@@ -26,13 +26,10 @@ a:visited {
 
 .hamburgerMenu,
 .closeBtn {
-    display: none;
+    opacity: 0;
 }
 
 .icons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     position: absolute;
     right: 40px;
     bottom: -30vh;
