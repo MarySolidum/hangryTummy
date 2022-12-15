@@ -1,5 +1,77 @@
+@media (max-width: 768px) {
 
+}
 
 @media (max-width: 480px) {
+    // general styles
+    .wrapper, .headerWrapper {
+        padding: 0 20px;
+    }
+
+    p {
+        font-size: 2.2rem;
+    }
+
+    // header
+    header {
+        height: 100vh;
+        background-size: contain;
+        background-position: bottom;
+    }
+
+    h1 {
+        font-size: 8rem;
+        line-height: 80px;
+        margin: 0;
+    }
+
+    // main section
+    main {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    // section 1
+    .exp1, .exp2 {
+        flex-direction: column-reverse;
+    }
+
+    .expImg {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .experience img {
+        width: 100%;
+        position: relative;
+    }
+
+    .exp2 .expImg, .exp1 .expImg {
+        left: -20px;
+    }
+
+    .expText {
+        width: 92vw;
+        height: 60vh;
+        justify-content: space-evenly;
+    }
+
+    .exp1 h2, .exp1 p, .exp1 form {
+        margin: 0;
+    }
+
+    .exp2 h2,
+    .exp2 p,
+    .exp2 form {
+        margin: 0;
+    }
+
+    // section 2
+    .dessertWrapper {
+        margin: 0;
+    }
 
 }
