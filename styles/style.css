@@ -673,7 +673,10 @@ form {
   .wrapper, .headerWrapper {
     padding: 0 20px;
   }
-  p {
+  p, form {
+    font-size: 2.2rem;
+  }
+  .btn {
     font-size: 2.2rem;
   }
   header {
@@ -773,5 +776,46 @@ form {
   }
   .gramImg2 {
     margin-right: 0;
+  }
+  footer {
+    text-align: center;
+  }
+  .menu li {
+    margin: 1px 30px;
+  }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+  .contactInfo {
+    padding-bottom: 30px;
+  }
+  .contactInfo p {
+    line-height: 35px;
+  }
+  footer h2 {
+    padding-left: 0;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #email {
+    width: 100%;
+    margin: 20px 0;
   }
 }
