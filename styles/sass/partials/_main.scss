@@ -132,6 +132,12 @@ main p {
     font-size: 6.5rem;
     text-align: center;
 }
+.ctaIcon {
+    transition: 0.3s;
+}
+.ctaIcon:visited {
+    color: #FFF;
+}
 .ctaIcon:hover, .ctaIcon:focus {
     color: #1F2022;
 }
@@ -173,6 +179,7 @@ main p {
     left: 0;
     top: 0;
     opacity: 0;
+    transition: 0.3s;
 }
 
 .overlay:hover,

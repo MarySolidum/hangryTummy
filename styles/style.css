@@ -299,11 +299,13 @@ ul {
 
 ul a {
   text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .dessertWrapper,
 .instaWrapper {
-  margin: 80px 0;
+  padding: 80px 100px;
 }
 
 header {
@@ -374,6 +376,11 @@ h1 {
 
 .icons li {
   margin: 15px 0;
+}
+
+.headerIcon {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .headerIcon:visited {
@@ -552,6 +559,15 @@ main p {
   text-align: center;
 }
 
+.ctaIcon {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.ctaIcon:visited {
+  color: #FFF;
+}
+
 .ctaIcon:hover, .ctaIcon:focus {
   color: #1F2022;
 }
@@ -598,6 +614,8 @@ main p {
   left: 0;
   top: 0;
   opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .overlay:hover,
@@ -746,5 +764,14 @@ form {
   .instaWrapper {
     margin: 0;
     padding: 40px;
+  }
+  .instaPics li:nth-child(3) {
+    display: none;
+  }
+  .instaPics li {
+    width: calc(50% - 10px);
+  }
+  .gramImg2 {
+    margin-right: 0;
   }
 }

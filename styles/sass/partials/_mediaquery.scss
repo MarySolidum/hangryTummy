@@ -113,4 +113,16 @@
         margin: 0;
         padding: 40px
     }
+
+    .instaPics li:nth-child(3) {
+        display: none;
+    }
+
+    .instaPics li {
+        width: calc(50% - 10px);
+    }
+
+    .gramImg2 {
+        margin-right: 0;
+    }
 }
